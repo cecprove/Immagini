@@ -8,7 +8,7 @@ for i=1:size(ImagesPath,1)
     images(i).images=imread([ImagesPath(i).folder,'/',ImagesPath(i).name]);
     % creo il path totale dell'immagine, quindi
     % sto caricando con ogni ciclo la struttura ad ogni immagine
-    % Se volessi solo l'immagine 7 scriverÚ images(7).images e gli dico di
+    % Se volessi solo l'immagine 7 scriver√≤ images(7).images e gli dico di
     % andare a prendere la settima immagine che ha  caricato nel database, in
     % questo caso la struct
     
@@ -18,7 +18,7 @@ for i=1:size(ImagesPath,1)
 end
 
 
-%creo array di stringhe che conterr‡ i nomi delle 11 tipologie delle
+%creo array di stringhe che conterr√† i nomi delle 11 tipologie delle
 %immagini
 lista_stringhe = string(lista_tipologie(1).lista);
 
@@ -190,7 +190,7 @@ for i=1:size(thumbnail.thumbnail_16x16,2)
      feature.normal(i).simmetria = skewness(skewness(double(thumbnail.thumbnail_16x16(i).thumbnail.thumbnail_16x16)));
 end
 
- % tolgo le 11 di riferimento aggiugenoÏdo matrici nulle
+ % tolgo le 11 di riferimento aggiugeno√¨do matrici nulle
 for i=1:size(thumbnail.thumbnail_rif,2)
   trovato = 0;
   for k=1:size(thumbnail.thumbnail_16x16,2)
@@ -240,7 +240,7 @@ end
  end  
 
  
-     %verit‡ per features media e entropia
+     %verit√† per features media e entropia
  counter.counter_normal.counter_m_e=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_normal.distanze_m_e(:,k)) ~= 0
@@ -258,7 +258,7 @@ end
  end
  
  
-  %verit‡ per features simmetria e media parti
+  %verit√† per features simmetria e media parti
   counter.counter_normal.counter_s_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_normal.distanze_s_mp(:,k)) ~= 0
@@ -277,7 +277,7 @@ end
  
  
  
-   %verit‡ per features media e entropia e media parti
+   %verit√† per features media e entropia e media parti
  counter.counter_normal.counter_m_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_normal.distanze_m_e_mp(:,k)) ~= 0
@@ -295,7 +295,7 @@ end
  end
  
  
-    %verit‡ per features entropia e media parti
+    %verit√† per features entropia e media parti
  counter.counter_normal.counter_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_normal.distanze_e_mp(:,k)) ~= 0
@@ -314,7 +314,7 @@ end
  
  
  
-     %verit‡ per features media e media parti
+     %verit√† per features media e media parti
  counter.counter_normal.counter_m_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_normal.distanze_m_mp(:,k)) ~= 0
@@ -366,7 +366,7 @@ end
  diff_media_totImm_noise_1 = media_parti_tot_noise_1(thumbnail,size(thumbnail.thumbnail_16x16,2));
  diff_media_totImm_noise_2 = media_parti_tot_noise_2(thumbnail,size(thumbnail.thumbnail_16x16,2));
  diff_media_totImm_noise_3 = media_parti_tot_noise_3(thumbnail,size(thumbnail.thumbnail_16x16,2));
- diff_media_totImm_noise_4 = media_parti_tot_noise_3(thumbnail,size(thumbnail.thumbnail_16x16,2));
+ diff_media_totImm_noise_4 = media_parti_tot_noise_4(thumbnail,size(thumbnail.thumbnail_16x16,2));
  
  %potenza 0.0001
   for k=1:size(thumbnail.thumbnail_16x16,2)
@@ -467,7 +467,7 @@ end
    end  
   
    %% Noise 1 
-  %verit‡ per features media e entropia noise1
+  %verit√† per features media e entropia noise1
  counter.counter_noise_1.counter_m_e=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise1.distanze_m_e(:,k)) ~= 0
@@ -484,7 +484,7 @@ end
      end
  end
 
- %verit‡ per features simmetria e media parti noise1
+ %verit√† per features simmetria e media parti noise1
   counter.counter_noise_1.counter_s_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise1.distanze_s_mp(:,k)) ~= 0
@@ -501,7 +501,7 @@ end
      end
  end
 
-  %verit‡ per features media e entropia e media parti noise1
+  %verit√† per features media e entropia e media parti noise1
  counter.counter_noise_1.counter_m_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise1.distanze_m_e_mp(:,k)) ~= 0
@@ -519,7 +519,7 @@ end
  end
  
  
- %verit‡ per features entropia e media parti noise1
+ %verit√† per features entropia e media parti noise1
  counter.counter_noise_1.counter_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise1.distanze_e_mp(:,k)) ~= 0
@@ -536,7 +536,7 @@ end
      end
  end
  
-  %verit‡ per features media e media parti noise1
+  %verit√† per features media e media parti noise1
  counter.counter_noise_1.counter_m_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise1.distanze_m_mp(:,k)) ~= 0
@@ -561,7 +561,7 @@ end
  %% Noise 2
  
  
-  %verit‡ per features media e entropia noise2
+  %verit√† per features media e entropia noise2
  counter.counter_noise_2.counter_m_e=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise2.distanze_m_e(:,k)) ~= 0
@@ -578,7 +578,7 @@ end
      end
  end
 
- %verit‡ per features simmetria e media parti noise2
+ %verit√† per features simmetria e media parti noise2
   counter.counter_noise_2.counter_s_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise2.distanze_s_mp(:,k)) ~= 0
@@ -595,7 +595,7 @@ end
      end
  end
 
-  %verit‡ per features media e entropia e media parti noise2
+  %verit√† per features media e entropia e media parti noise2
  counter.counter_noise_2.counter_m_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise2.distanze_m_e_mp(:,k)) ~= 0
@@ -613,7 +613,7 @@ end
  end
  
  
- %verit‡ per features entropia e media parti noise2
+ %verit√† per features entropia e media parti noise2
  counter.counter_noise_2.counter_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise2.distanze_e_mp(:,k)) ~= 0
@@ -630,7 +630,7 @@ end
      end
  end
  
-  %verit‡ per features media e media parti noise2
+  %verit√† per features media e media parti noise2
  counter.counter_noise_2.counter_m_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise2.distanze_m_mp(:,k)) ~= 0
@@ -650,7 +650,7 @@ end
  
  
  %% Noise 3
- %verit‡ per features media e entropia noise3
+ %verit√† per features media e entropia noise3
  counter.counter_noise_3.counter_m_e=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise3.distanze_m_e(:,k)) ~= 0
@@ -667,7 +667,7 @@ end
      end
  end
 
- %verit‡ per features simmetria e media parti noise3
+ %verit√† per features simmetria e media parti noise3
   counter.counter_noise_3.counter_s_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise3.distanze_s_mp(:,k)) ~= 0
@@ -684,7 +684,7 @@ end
      end
  end
 
-  %verit‡ per features media e entropia e media parti noise3
+  %verit√† per features media e entropia e media parti noise3
  counter.counter_noise_3.counter_m_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise3.distanze_m_e_mp(:,k)) ~= 0
@@ -702,7 +702,7 @@ end
  end
  
  
- %verit‡ per features entropia e media parti noise3
+ %verit√† per features entropia e media parti noise3
  counter.counter_noise_3.counter_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise3.distanze_e_mp(:,k)) ~= 0
@@ -719,7 +719,7 @@ end
      end
  end
  
-  %verit‡ per features media e media parti noise3
+  %verit√† per features media e media parti noise3
  counter.counter_noise_3.counter_m_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise3.distanze_m_mp(:,k)) ~= 0
@@ -738,7 +738,7 @@ end
  
  
  %% Noise 4
-  %verit‡ per features media e entropia noise1
+  %verit√† per features media e entropia noise1
  counter.counter_noise_4.counter_m_e=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise1.distanze_m_e(:,k)) ~= 0
@@ -755,7 +755,7 @@ end
      end
  end
 
- %verit‡ per features simmetria e media parti noise4
+ %verit√† per features simmetria e media parti noise4
   counter.counter_noise_4.counter_s_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise4.distanze_s_mp(:,k)) ~= 0
@@ -772,7 +772,7 @@ end
      end
  end
 
-  %verit‡ per features media e entropia e media parti noise4
+  %verit√† per features media e entropia e media parti noise4
  counter.counter_noise_4.counter_m_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise4.distanze_m_e_mp(:,k)) ~= 0
@@ -790,7 +790,7 @@ end
  end
  
  
- %verit‡ per features entropia e media parti noise4
+ %verit√† per features entropia e media parti noise4
  counter.counter_noise_4.counter_e_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise4.distanze_e_mp(:,k)) ~= 0
@@ -807,7 +807,7 @@ end
      end
  end
  
-  %verit‡ per features media e media parti noise4
+  %verit√† per features media e media parti noise4
  counter.counter_noise_4.counter_m_mp=0;
  for k= 1:size(thumbnail.thumbnail_16x16_senza_rif,2)
      if sum(distanze.distanze_noise4.distanze_m_mp(:,k)) ~= 0
